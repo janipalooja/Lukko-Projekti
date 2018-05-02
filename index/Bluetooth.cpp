@@ -6,7 +6,7 @@ Bluetooth::Bluetooth(bool displayMsg) {
 
 int Bluetooth::readPinFromSerial() {
 
-  int pinCode;
+  int pinCode = 0;
 
   if (Serial.available() > 0) {
 
