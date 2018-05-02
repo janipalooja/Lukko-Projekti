@@ -30,7 +30,7 @@ byte Authentication::status(int RFID, int keypadPIN, int bluetoothPIN) {
     for (int i = 0; i < NUMBER_OF_USERS; i++) {
       if (identifier == users[i].pin) {
         Authentication::userID = users[i].id;
-        Authentication::userName = users[i].name;
+        Authentication::userName = users[i].userName;
         pinMatch++;
       }
       if (pinMatch > 0) {
