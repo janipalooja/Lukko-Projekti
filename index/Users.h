@@ -1,12 +1,11 @@
 struct User {
-  // TODO: Add RFID identity here??
   byte id;
   int pin;
-  char name[5];
+  String userName;
 } users[NUMBER_OF_USERS] = {
   // Id,  "Pin/Identifier", "Name"
-  { 1, 1111, "Jani" },
-  { 2, 2222, "Joni" },
-  { 3, 3333, "Satu" }
+  { 1, 1111, "userName" },
+  { 2, 2222, "userName" },
+  { 3, 3333, "userName" }
 };
 
