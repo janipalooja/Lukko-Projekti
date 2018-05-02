@@ -9,14 +9,14 @@ void MicroSD::initialization() {
 
 // Debug printing
   #ifdef DEBUG
-    Serial.print(F("[RFID] "));
+    Serial.print(F("[MicroSD_cpp] "));
     Serial.println(F("Initializing SD card..."));
   #endif
 
   if (!SD.begin(10)) {
 // Debug printing
   #ifdef DEBUG
-    Serial.print(F("[RFID] "));
+    Serial.print(F("[MicroSD_cpp] "));
     Serial.println(F("initialization failed!"));
     #endif
     
@@ -24,7 +24,7 @@ void MicroSD::initialization() {
   }
 // Debug printing
   #ifdef DEBUG
-  Serial.print(F("[RFID] "));
+  Serial.print(F("[MicroSD_cpp] "));
   Serial.println(F("initialization done."));
   #endif
 }
@@ -63,7 +63,7 @@ void MicroSD::logTheAuthData(byte authStatus, String method, byte userID, String
 // Debug printing
   #ifdef DEBUG
     // if the file didn't open, print an error:
-    Serial.println(F("error opening file"));
+    Serial.println(F("[MicroSD_cpp] error opening file"));
   #endif
   }
 }
